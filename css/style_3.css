@@ -1,0 +1,96 @@
+@charset "UTF-8";
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+ul {
+    list-style: none;
+}
+address {
+    font-style: normal;
+}
+.clearfix::after {
+    content: " ";
+    display: block;
+    height: 0;
+    visibility: hidden;
+    clear: both;
+    zoom: 1;
+}
+/* 字体集 */
+
+html {
+    font-size: 10px;
+}
+body {
+    font-size: 1.4rem;
+}
+h1 {
+    font-size: 1.8rem;
+}
+h2 {
+    font-size: 1.5rem;
+}
+h3 {
+    font-size: 1.4rem;
+}
+/* 限定body(简历)宽度 */
+body {
+    width: 100rem;
+    margin: 0 auto;
+}
+/* 头部简历二字 */
+header {
+    height: 5rem;
+    padding-left: 2rem;
+
+    line-height: 5rem;
+
+    color: #fff;
+    background-color: #8c8c8c;
+}
+/* main边框 */
+main {   
+    border-left: 1px solid #cccccc;
+    border-right: 1px solid #cccccc;
+}
+/* 主体部分利用浮动分成两列 */
+.column-1 {
+    float: left;
+
+    width: 8rem;
+    height: 10rem;
+
+    line-height: 10rem;
+    text-align: center;
+
+    background-color: #cccccc;
+}
+.column-2 {
+    float: left;
+
+    height: 10rem;
+    padding: 1rem 2rem;
+}
+/* 设置第二列样式 */
+/* 基本信息+联系方式 */
+#contact > li,
+#basic-info > li {
+    float: left;
+    margin-right: 4rem;
+}
+#contact > li > strong,
+#basic-info > li > strong {
+    margin-right: 1rem;
+}
+/* 能力描述,教育经历，项目经历 */
+.column-2 > h3,
+.column-2 > p {
+    float: left;
+}
+/* 边框 */
+.border {
+    padding-bottom: 1px;
+    border-bottom: 1px solid #cccccc;
+}

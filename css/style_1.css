@@ -1,0 +1,66 @@
+@charset "UTF-8";
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+ul { 
+    list-style: none; 
+}
+/* 设置网页安全字体 */
+html {
+    font: 
+        10px/1 
+        Helvetica, Arial, Courier, "Courier New", Georgia, Times, "Times New Roman", Verdana;
+}
+/* 字体集 */
+body {
+    font-size: 1.6rem;
+}
+h1 {
+    font-size: 3rem;
+}
+h2 {
+    font-size: 2rem;
+}
+h3 {
+    font-size: 1.6rem;
+}
+/* 统一设置margin padding */
+h1 {
+    margin: 2rem 0;
+}
+h2 {
+    margin: 1rem 0;
+}
+h3 {
+    margin: .4rem 0;
+}
+/* 清除浮动 */
+.clearfix::after {
+    content: " ";
+    display: block;
+    visibility: hidden;
+    height: 0;
+    clear: both;
+    zoom: 1;
+}
+
+/* 基本信息、联系方式列表 */
+address {
+    font-style: normal;
+}
+#basic-info > li,
+#contact > li { 
+    float: left ;
+    margin-right: 4rem;
+}
+#basic-info > li > strong,
+#contact > li > strong {
+    margin-right: 1rem;
+}
+
+/* 去掉br标签造成的换行效果(页面上多出了一段空白距离) */
+br {
+    display: none;
+}

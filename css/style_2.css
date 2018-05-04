@@ -1,0 +1,94 @@
+@charset "UTF-8";
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+ul {
+    list-style: none;
+}
+html {
+    font: 
+        10px/1.5
+        Helvetica, Arial, Courier, "Courier New", Georgia, Times, "Times New Roman", Verdana;
+}
+/* 消除浮动 */
+.clearfix::after {
+    content: " ";
+    display: block;
+    height: 0;
+    visibility: hidden;
+    clear: both;
+    zoom: 1;
+}
+/* 字体集 h1~h3标签的margin padding */
+body {
+    font-size: 1.4rem;
+}
+h1 {
+    margin: 2rem 0;
+    font-size: 3rem;
+}
+h2 {
+    margin: 1rem 0;
+    font-size: 2rem;
+}
+h3 {
+    margin: 0.5rem 0;
+    font-size: 1.6rem;
+}
+
+/* body */
+body {
+    width: 80rem;
+    margin: 0 auto;
+}
+
+/* header */
+header {
+    float: left;
+
+    width: 18rem;
+    height: 62.5rem;
+    margin: 1rem;
+    padding: 3rem;
+
+    text-align: center;
+
+    background-color: #11C2EE;
+    color: #fff;
+}
+
+/* main */
+main {
+    float: right;
+
+    width: 58rem;
+    height: 62.5rem;
+    margin: 1rem;
+    padding: 1rem 0;
+}
+address {
+    font-style: normal;
+}
+#basic-info > li,
+#contact > li {
+    float: left;
+}
+#basic-info > li > strong {
+    margin-right: 1rem;
+}
+#basic-info > li > span {
+    margin-right: 4rem;
+}
+#contact > li {
+    margin-right: 4rem;
+}
+#contact > li > strong {
+    margin-right: 1rem;
+}
+
+/* 去掉br标签造成的换行效果(页面上多出了一段空白距离) */
+br {
+    display: none;
+}
